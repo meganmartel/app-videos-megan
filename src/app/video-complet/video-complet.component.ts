@@ -3,11 +3,11 @@ import { VIDEOS } from '../mock-videos';
 import { Video } from '../video';
 
 @Component({
-  selector: 'app-liste-videos',
-  templateUrl: './liste-videos.component.html',
-  styleUrls: ['./liste-videos.component.css']
+  selector: 'app-video-complet',
+  templateUrl: './video-complet.component.html',
+  styleUrls: ['./video-complet.component.css']
 })
-export class ListeVideosComponent {
+export class VideoCompletComponent {
   @Input() video: Video = {
     img_url: "",
     nom: "",

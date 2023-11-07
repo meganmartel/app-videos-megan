@@ -1,0 +1,40 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Petit vidéo</title>
+</head>
+
+<body>
+  <div>
+    <div class="relative inline-block">
+      <img class="rounded-xl" [src]="video.img_url" alt="{{video.nom}}">
+      <p
+        class="absolute top-40 left-72 translate-y-14 translate-x-16 p-1 bg-black text-white border border-solid border-white rounded">
+        {{video.duree}}</p>
+    </div>
+    <div class="flex">
+      <div>
+        <img class="h-14 w-14 rounded-full mt-2.5" src="/assets/woman.jpg" alt="utilisateur">
+      </div>
+      <div class="ml-5">
+        <h1 class="mb-2.5 mt-5 font-normal">{{video.nom}}</h1>
+        <div class="flex">
+          <app-utilisateur [auteur]="video.auteur"></app-utilisateur>
+          <span class="material-symbols-outlined text-xl">
+            check_circle
+          </span>
+        </div>
+        <p>{{video.datePublication}}</p>
+        <p>{{video.nombreVues}}k vues</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

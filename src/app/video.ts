@@ -1,13 +1,13 @@
-import { Auteur } from "./auteur";
+import { Utilisateur } from "./utilisateur";
 import { Avis } from "./avis";
 
 export interface Video {
+    img_url: string;
     nom: string;
     description: string;
-    code: string;
     categories: string[];
-    auteur: Auteur
-    datePublication: Date;
+    auteur: Utilisateur
+    datePublication: string;
     duree: number;
     nombreVues: number;
     avis: Avis[]

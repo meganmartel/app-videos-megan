@@ -2,22 +2,17 @@ import { Video } from "./video";
 
 export const VIDEOS: Video[] = [
     {
-        nom: 'Vidéo 1',
+        img_url: "https://picsum.photos/id/49/400/250",
+        nom: 'Un voyage de rêve',
         description: 'Description de la vidéo 1',
-        code: 'ABC001',
-        categories: ['Horreur'],
+        categories: ['Voyage'],
         auteur: {
-            nomAuteur: 'Dave Thivierge',
-            coordonnees: {
-                courriel: 'davethivierge@gmail.com',
-                compteFacebook: 'Dave Thivierge',
-                compteInstagram: '@dave.thivierge',
-            },
-            descriptionAuteur: 'Description de Dave Thivierge',
+            nom: 'Julia Pearson',
+            description: 'Description de Julia Pearson',
         },
-        datePublication: new Date(2020, 10, 31),
-        duree: 120,
-        nombreVues: 2500,
+        datePublication: '31-10-2020',
+        duree: 1278,
+        nombreVues: 274,
         avis: [
             {
                 note: 8,
@@ -27,22 +22,17 @@ export const VIDEOS: Video[] = [
     },
 
     {
-        nom: 'Vidéo 2',
+        img_url: "https://picsum.photos/id/191/400/250",
+        nom: 'La route sinueuse',
         description: 'Description de la vidéo 2',
-        code: 'ABC002',
         categories: ['Action'],
         auteur: {
-            nomAuteur: 'Pascal Leclerc',
-            coordonnees: {
-                courriel: 'pascalleclerc@gmail.com',
-                compteFacebook: 'Pascal Leclerc',
-                compteInstagram: '@pascal.leclerc',
-            },
-            descriptionAuteur: 'Description de Pascal Leclerc',
+            nom: 'Olivia Collins',
+            description: 'Description de Olivia Collins',
         },
-        datePublication: new Date(2021, 5, 15),
-        duree: 90,
-        nombreVues: 3000,
+        datePublication: '15-05-2021',
+        duree: 2436,
+        nombreVues: 300,
         avis: [
             {
                 note: 9,
@@ -53,26 +43,164 @@ export const VIDEOS: Video[] = [
 
 
     {
-        nom: 'Vidéo 3',
+        img_url: "https://picsum.photos/id/158/400/250",
+        nom: 'Un spectacle réussi',
         description: 'Description de la vidéo 3',
-        code: 'ABC003',
-        categories: ['Humour'],
+        categories: ['Musique'],
         auteur: {
-            nomAuteur: 'Michel Lemieux',
-            coordonnees: {
-                courriel: 'michellemieux@gmail.com',
-                compteFacebook: 'Michel Lemieux',
-                compteInstagram: '@michel.lemieux',
-            },
-            descriptionAuteur: 'Description de Michel Lemieux',
+            nom: 'Erin Coleman',
+            description: 'Description de Erin Coleman',
         },
-        datePublication: new Date(2021, 8, 12),
-        duree: 150,
-        nombreVues: 3500,
+        datePublication: '12-08-2021',
+        duree: 2211,
+        nombreVues: 350,
         avis: [
             {
                 note: 8.5,
                 commentaires: 'Commentaires de la vidéo 3',
+            },
+        ]
+    },
+
+    {
+        img_url: "https://picsum.photos/id/124/400/250",
+        nom: 'Perdue sur une île',
+        description: 'Description de la vidéo 4',
+        categories: ['Drame'],
+        auteur: {
+            nom: 'Rachel Owen',
+            description: 'Description de Rachel Owen',
+        },
+        datePublication: '16-01-2022',
+        duree: 1489,
+        nombreVues: 243,
+        avis: [
+            {
+                note: 8.8,
+                commentaires: 'Commentaires de la vidéo 4',
+            },
+        ]
+    },
+    
+
+    {
+        img_url: "https://picsum.photos/id/155/400/250",
+        nom: 'Le chemin de fer',
+        description: 'Description de la vidéo 5',
+        categories: ['Action'],
+        auteur: {
+            nom: 'Lili Clark',
+            description: 'Description de Lily Clark',
+        },
+        datePublication: '21-02-2022',
+        duree: 1376,
+        nombreVues: 326,
+        avis: [
+            {
+                note: 8.4,
+                commentaires: 'Commentaires de la vidéo 5',
+            },
+        ]
+    },
+
+    {
+        img_url: "https://picsum.photos/id/156/400/250",
+        nom: 'Une empreinte inconnue',
+        description: 'Description de la vidéo 6',
+        categories: ['Drame'],
+        auteur: {
+            nom: 'Emily Parker',
+            description: 'Description de Emily Parker',
+        },
+        datePublication: '11-03-2022',
+        duree: 1128,
+        nombreVues: 259,
+        avis: [
+            {
+                note: 9.3,
+                commentaires: 'Commentaires de la vidéo 6',
+            },
+        ]
+    },
+
+    {
+        img_url: "https://picsum.photos/id/274/400/250",
+        nom: 'Bienvenue à New York',
+        description: 'Description de la vidéo 7',
+        categories: ['Humour'],
+        auteur: {
+            nom: 'Olivia Anderson',
+            description: 'Description de Olivia Anderson',
+        },
+        datePublication: '05-06-2022',
+        duree: 2157,
+        nombreVues: 192,
+        avis: [
+            {
+                note: 7.8,
+                commentaires: 'Commentaires de la vidéo 7',
+            },
+        ]
+    },
+
+
+    {
+        img_url: "https://picsum.photos/id/318/400/250",
+        nom: 'Bonjour Paris',
+        description: 'Description de la vidéo 8',
+        categories: ['Voyage'],
+        auteur: {
+            nom: 'Sophia Mitchell',
+            description: 'Description de Sophia Mitchell',
+        },
+        datePublication: '05-07-2022',
+        duree: 1368,
+        nombreVues: 290,
+        avis: [
+            {
+                note: 8.7,
+                commentaires: 'Commentaires de la vidéo 8',
+            },
+        ]
+    },
+
+    {
+        img_url: "https://picsum.photos/id/336/400/250",
+        nom: 'Les serrures de l`amour',
+        description: 'Description de la vidéo 9',
+        categories: ['Romantique'],
+        auteur: {
+            nom: 'Isabella Morgan',
+            description: 'Description de Isabella Morgan',
+        },
+        datePublication: '23-03-2023',
+        duree: 1735,
+        nombreVues: 318,
+        avis: [
+            {
+                note: 8.2,
+                commentaires: 'Commentaires de la vidéo 9',
+            },
+        ]
+    },
+    
+
+    {
+        img_url: "https://picsum.photos/id/348/400/250",
+        nom: 'La folie des magasins',
+        description: 'Description de la vidéo 10',
+        categories: ['Humour'],
+        auteur: {
+            nom: 'Ava Johnson',
+            description: 'Description de Ava Johnson',
+        },
+        datePublication: '25-04-2023',
+        duree: 1906,
+        nombreVues: 240,
+        avis: [
+            {
+                note: 9.7,
+                commentaires: 'Commentaires de la vidéo 10',
             },
         ]
     },
