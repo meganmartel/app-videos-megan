@@ -13,6 +13,8 @@ export const VIDEOS: Video[] = [
         datePublication: '31-10-2020',
         duree: 1278,
         nombreVues: 274,
+        score: 2500,
+        sousTitres: 'st',
         avis: [
             {
                 note: 8,
@@ -33,6 +35,8 @@ export const VIDEOS: Video[] = [
         datePublication: '15-05-2021',
         duree: 2436,
         nombreVues: 300,
+        score: 2500,
+        sousTitres: 'st',
         avis: [
             {
                 note: 9,
@@ -54,6 +58,8 @@ export const VIDEOS: Video[] = [
         datePublication: '12-08-2021',
         duree: 2211,
         nombreVues: 350,
+        score: 2500,
+        sousTitres: 'st',
         avis: [
             {
                 note: 8.5,
@@ -74,6 +80,8 @@ export const VIDEOS: Video[] = [
         datePublication: '16-01-2022',
         duree: 1489,
         nombreVues: 243,
+        score: 2500,
+        sousTitres: 'st',
         avis: [
             {
                 note: 8.8,
@@ -95,6 +103,8 @@ export const VIDEOS: Video[] = [
         datePublication: '21-02-2022',
         duree: 1376,
         nombreVues: 326,
+        score: 2500,
+        sousTitres: 'st',
         avis: [
             {
                 note: 8.4,
@@ -115,6 +125,8 @@ export const VIDEOS: Video[] = [
         datePublication: '11-03-2022',
         duree: 1128,
         nombreVues: 259,
+        score: 2500,
+        sousTitres: 'st',
         avis: [
             {
                 note: 9.3,
@@ -135,6 +147,8 @@ export const VIDEOS: Video[] = [
         datePublication: '05-06-2022',
         duree: 2157,
         nombreVues: 192,
+        score: 2500,
+        sousTitres: 'st',
         avis: [
             {
                 note: 7.8,
@@ -156,6 +170,8 @@ export const VIDEOS: Video[] = [
         datePublication: '05-07-2022',
         duree: 1368,
         nombreVues: 290,
+        score: 2500,
+        sousTitres: 'st',
         avis: [
             {
                 note: 8.7,
@@ -176,6 +192,8 @@ export const VIDEOS: Video[] = [
         datePublication: '23-03-2023',
         duree: 1735,
         nombreVues: 318,
+        score: 2500,
+        sousTitres: 'st',
         avis: [
             {
                 note: 8.2,
@@ -197,6 +215,8 @@ export const VIDEOS: Video[] = [
         datePublication: '25-04-2023',
         duree: 1906,
         nombreVues: 240,
+        score: 2500,
+        sousTitres: 'st',
         avis: [
             {
                 note: 9.7,

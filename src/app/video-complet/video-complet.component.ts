@@ -20,7 +20,8 @@ export class VideoCompletComponent {
     datePublication: "",
     duree: 0,
     nombreVues: 0,
+    score: 0,
+    sousTitres: "",
     avis: []
   }
-  videos = VIDEOS
 }

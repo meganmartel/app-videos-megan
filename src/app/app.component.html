@@ -13,7 +13,7 @@
   <header class="flex justify-between items-center w-100 p-10 m-auto">
     <h1><img src="/assets/Metube.png" alt="Logo"></h1>
     <p class="bg-white text-black p-2 rounded-xl w-80 mb-0">Rechercher</p>
-    <app-utilisateur class="bg-white text-black p-2 rounded-xl mb-0" [auteur]="utilisateurConnecte.auteur"></app-utilisateur>
+    <app-utilisateur class="bg-white text-black p-2 rounded-xl mb-0" [auteur]="videos[0].auteur"></app-utilisateur>
   </header>
 
   <div class="flex w-100 p-10 mx-auto bg-black">
@@ -42,7 +42,7 @@
         <app-liste-videos></app-liste-videos>
       </div>
       <div>
-        <app-video-complet></app-video-complet>
+        <app-video-complet [video]="videos[0]" ></app-video-complet>
       </div>
     </div>
   </div>

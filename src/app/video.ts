@@ -10,5 +10,7 @@ export interface Video {
     datePublication: string;
     duree: number;
     nombreVues: number;
+    score: number;
+    sousTitres: string;
     avis: Avis[]
 }
