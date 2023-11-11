@@ -18,6 +18,10 @@
         class="absolute top-40 left-72 translate-y-14 translate-x-16 p-1 bg-black text-white border border-solid border-white rounded">
         {{video.duree}}</p>
     </div>
+    <div ngClass="{'score-eleve': video.score > 5000, 'score-bas': video.score < 5000}" class="text-right" >
+      <span *ngIf="video.score > 5000" class="text-green-500 font-bold">Score élevé</span>
+      <span *ngIf="video.score < 5000" class="text-red-500 font-bold">Score bas</span>
+    </div>
     <div class="flex">
       <div>
         <img class="h-14 w-14 rounded-full mt-2.5" src="/assets/woman.jpg" alt="utilisateur">
@@ -26,7 +30,7 @@
         <h1 class="mb-2.5 mt-5 font-normal">{{video.nom}}</h1>
         <div class="flex mb-2 mt-1 items-center">
           <app-utilisateur class="mr-2.5" [auteur]="video.auteur"></app-utilisateur>
-          <span class="material-symbols-outlined text-xl">
+          <span *ngIf="video.auteur.verifie" class="material-symbols-outlined text-xl text-green-500">
             check_circle
           </span>
         </div>

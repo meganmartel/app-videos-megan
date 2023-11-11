@@ -10,5 +10,6 @@ export class UtilisateurComponent {
   @Input() auteur: Utilisateur = {
     nom: "",
     description: "",
+    verifie: true,
   }
 }

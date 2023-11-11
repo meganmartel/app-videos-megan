@@ -9,11 +9,12 @@ export const VIDEOS: Video[] = [
         auteur: {
             nom: 'Julia Pearson',
             description: 'Description de Julia Pearson',
+            verifie: true,
         },
         datePublication: '31-10-2020',
         duree: 1278,
         nombreVues: 274,
-        score: 2500,
+        score: 2385,
         sousTitres: 'st',
         avis: [
             {
@@ -31,11 +32,12 @@ export const VIDEOS: Video[] = [
         auteur: {
             nom: 'Olivia Collins',
             description: 'Description de Olivia Collins',
+            verifie: true,
         },
         datePublication: '15-05-2021',
         duree: 2436,
         nombreVues: 300,
-        score: 2500,
+        score: 5932,
         sousTitres: 'st',
         avis: [
             {
@@ -54,11 +56,12 @@ export const VIDEOS: Video[] = [
         auteur: {
             nom: 'Erin Coleman',
             description: 'Description de Erin Coleman',
+            verifie: true,
         },
         datePublication: '12-08-2021',
         duree: 2211,
         nombreVues: 350,
-        score: 2500,
+        score: 4270,
         sousTitres: 'st',
         avis: [
             {
@@ -76,11 +79,12 @@ export const VIDEOS: Video[] = [
         auteur: {
             nom: 'Rachel Owen',
             description: 'Description de Rachel Owen',
+            verifie: true,
         },
         datePublication: '16-01-2022',
         duree: 1489,
         nombreVues: 243,
-        score: 2500,
+        score: 6400,
         sousTitres: 'st',
         avis: [
             {
@@ -99,11 +103,12 @@ export const VIDEOS: Video[] = [
         auteur: {
             nom: 'Lili Clark',
             description: 'Description de Lily Clark',
+            verifie: true,
         },
         datePublication: '21-02-2022',
         duree: 1376,
         nombreVues: 326,
-        score: 2500,
+        score: 3610,
         sousTitres: 'st',
         avis: [
             {
@@ -121,11 +126,12 @@ export const VIDEOS: Video[] = [
         auteur: {
             nom: 'Emily Parker',
             description: 'Description de Emily Parker',
+            verifie: true,
         },
         datePublication: '11-03-2022',
         duree: 1128,
         nombreVues: 259,
-        score: 2500,
+        score: 5542,
         sousTitres: 'st',
         avis: [
             {
@@ -143,11 +149,12 @@ export const VIDEOS: Video[] = [
         auteur: {
             nom: 'Olivia Anderson',
             description: 'Description de Olivia Anderson',
+            verifie: true,
         },
         datePublication: '05-06-2022',
         duree: 2157,
         nombreVues: 192,
-        score: 2500,
+        score: 2470,
         sousTitres: 'st',
         avis: [
             {
@@ -166,11 +173,12 @@ export const VIDEOS: Video[] = [
         auteur: {
             nom: 'Sophia Mitchell',
             description: 'Description de Sophia Mitchell',
+            verifie: true,
         },
         datePublication: '05-07-2022',
         duree: 1368,
         nombreVues: 290,
-        score: 2500,
+        score: 6250,
         sousTitres: 'st',
         avis: [
             {
@@ -188,11 +196,12 @@ export const VIDEOS: Video[] = [
         auteur: {
             nom: 'Isabella Morgan',
             description: 'Description de Isabella Morgan',
+            verifie: true,
         },
         datePublication: '23-03-2023',
         duree: 1735,
         nombreVues: 318,
-        score: 2500,
+        score: 4500,
         sousTitres: 'st',
         avis: [
             {
@@ -211,11 +220,12 @@ export const VIDEOS: Video[] = [
         auteur: {
             nom: 'Ava Johnson',
             description: 'Description de Ava Johnson',
+            verifie: true,
         },
         datePublication: '25-04-2023',
         duree: 1906,
         nombreVues: 240,
-        score: 2500,
+        score: 5390,
         sousTitres: 'st',
         avis: [
             {

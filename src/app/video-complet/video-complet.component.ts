@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-import { VIDEOS } from '../mock-videos';
 import { Video } from '../video';
 
 @Component({
@@ -16,6 +15,7 @@ export class VideoCompletComponent {
     auteur: {
       nom: "",
       description: "",
+      verifie: true,
     },
     datePublication: "",
     duree: 0,

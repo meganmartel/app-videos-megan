@@ -1,16 +1,18 @@
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
+
 <body>
-    <div>
+  <div class="gros-video">
     <div class="relative inline-block">
       <img class="rounded-xl" [src]="video.img_url" alt="{{video.nom}}">
       <p
-        class="absolute top-40 left-72 translate-y-14 translate-x-16 p-1 bg-black text-white border border-solid border-white rounded">
+        class="absolute bottom-0 right-0 translate-y-3 p-1 bg-black text-white border border-solid border-white rounded">
         {{video.duree}}</p>
     </div>
     <div class="flex">
@@ -18,26 +20,31 @@
         <img class="h-14 w-14 rounded-full mt-2.5" src="/assets/woman.jpg" alt="utilisateur">
       </div>
       <div class="ml-5">
-        <h1 class="mb-2.5 mt-5 font-normal">{{video.nom}}</h1>
+        <h1 class="mb-2.5 mt-5 font-normal text-4xl">{{video.nom}}</h1>
         <h2>{{video.description}}</h2>
         <h3>{{video.categories}}</h3>
-        <div class="flex mb-2 mt-1 items-center">
-          <app-utilisateur class="mr-2.5" [auteur]="video.auteur"></app-utilisateur>
-          <span class="material-symbols-outlined text-xl">
-            check_circle
-          </span>
-          <p>{{video.auteur.description}}</p>
+        <div>
+          <div class="flex mb-2 mt-1 items-center">
+            <app-utilisateur class="mr-2.5" [auteur]="video.auteur"></app-utilisateur>
+            <span class="material-symbols-outlined text-xl">
+              check_circle
+            </span>
+          </div>
+          <div>
+            <p>{{video.auteur.description}}</p>
+          </div>
         </div>
         <p>{{video.datePublication}}</p>
         <p>{{video.nombreVues}}k vues</p>
         <p>{{video.score}}</p>
         <p>{{video.sousTitres}}</p>
         <div>
-            <p *ngFor="let avis of video.avis">{{avis.note}}</p>
-            <p *ngFor="let avis of video.avis">{{avis.commentaires}}</p>
+          <p *ngFor="let avis of video.avis">{{avis.note}}</p>
+          <p *ngFor="let avis of video.avis">{{avis.commentaires}}</p>
         </div>
       </div>
     </div>
   </div>
 </body>
+
 </html>
