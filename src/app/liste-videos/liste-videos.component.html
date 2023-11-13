@@ -4,14 +4,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
   <script src="https://cdn.tailwindcss.com"></script>
   <title>Liste des vidéos</title>
 </head>
 
 <body>
-  <div class="flex grid grid-cols-5 gap-10 pl-20 mt-20">
+  <div class="grid grid-cols-5 gap-10 pl-20 mt-20">
     <div *ngFor="let video of videos">
       <app-petit-video [video]="video"></app-petit-video>
     </div>

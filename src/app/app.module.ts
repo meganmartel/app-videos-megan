@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
+import {MatIconModule} from '@angular/material/icon';
+import {MatChipsModule} from '@angular/material/chips'; 
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -10,6 +12,7 @@ import { PetitVideoComponent } from './petit-video/petit-video.component';
 import { VideoCompletComponent } from './video-complet/video-complet.component';
 import { UtilisateurComponent } from './utilisateur/utilisateur.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CategoriesComponent } from './categories/categories.component';
 
 @NgModule({
   declarations: [
@@ -18,12 +21,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     PetitVideoComponent,
     VideoCompletComponent,
     UtilisateurComponent,
+    CategoriesComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    CommonModule
+    CommonModule,
+    MatIconModule,
+    MatChipsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

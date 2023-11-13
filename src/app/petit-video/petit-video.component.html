@@ -4,8 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <title>Petit vidéo</title>
 </head>
@@ -30,9 +29,7 @@
         <h1 class="mb-2.5 mt-5 font-normal">{{video.nom}}</h1>
         <div class="flex mb-2 mt-1 items-center">
           <app-utilisateur class="mr-2.5" [auteur]="video.auteur"></app-utilisateur>
-          <span *ngIf="video.auteur.verifie" class="material-symbols-outlined text-xl text-green-500">
-            check_circle
-          </span>
+          <span *ngIf="video.auteur.verifie===true" class="text-green-500"><mat-icon>verified</mat-icon></span>
         </div>
         <p>{{video.datePublication}}</p>
         <p>{{video.nombreVues}}k vues</p>

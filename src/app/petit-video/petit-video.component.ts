@@ -4,7 +4,7 @@ import { Video } from '../video';
 @Component({
   selector: 'app-petit-video',
   templateUrl: './petit-video.component.html',
-  styleUrls: ['./petit-video.component.css']
+  styleUrls: ['./petit-video.component.css'],
 })
 export class PetitVideoComponent {
   @Input() video: Video = {
