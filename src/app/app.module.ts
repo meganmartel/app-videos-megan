@@ -13,6 +13,7 @@ import { VideoCompletComponent } from './video-complet/video-complet.component';
 import { UtilisateurComponent } from './utilisateur/utilisateur.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CategoriesComponent } from './categories/categories.component';
+import { MenuGaucheComponent } from './menu-gauche/menu-gauche.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { CategoriesComponent } from './categories/categories.component';
     VideoCompletComponent,
     UtilisateurComponent,
     CategoriesComponent,
+    MenuGaucheComponent,
   ],
   imports: [
     BrowserModule,

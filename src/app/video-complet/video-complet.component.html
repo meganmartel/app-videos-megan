@@ -4,15 +4,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Vidéo complet</title>
 </head>
 
-<body>
+<body class="pb-20">
   <div class="gros-video">
     <div class="relative inline-block">
-      <img class="rounded-xl" [src]="video.img_url" alt="{{video.nom}}">
+      <img class="block max-w-full h-auto rounded-xl" [src]="video.img_url" alt="{{video.nom}}">
       <p
-        class="absolute bottom-0 right-0 translate-y-3 p-1 bg-black text-white border border-solid border-white rounded">
+        class="absolute bottom-2.5 right-2.5 p-1 mb-0 bg-black text-white border border-solid border-white rounded">
         {{video.duree}}</p>
     </div>
     <div class="flex">
@@ -21,14 +23,12 @@
       </div>
       <div class="ml-5">
         <h1 class="mb-2.5 mt-5 font-normal text-4xl">{{video.nom}}</h1>
-        <h2>{{video.description}}</h2>
-        <h3>{{video.categories}}</h3>
+        <h2 class="mb-2.5">{{video.description}}</h2>
+        <h3 class="mb-2.5">{{video.categories}}</h3>
         <div>
           <div class="flex mb-2 mt-1 items-center">
             <app-utilisateur class="mr-2.5" [auteur]="video.auteur"></app-utilisateur>
-            <span class="material-symbols-outlined text-xl">
-              check_circle
-            </span>
+            <span *ngIf="video.auteur.verifie===true" class="text-green-500"><mat-icon>verified</mat-icon></span>
           </div>
           <div>
             <p>{{video.auteur.description}}</p>
@@ -37,12 +37,17 @@
         <p>{{video.datePublication}}</p>
         <p>{{video.nombreVues}}k vues</p>
         <p>{{video.score}}</p>
-        <p>{{video.sousTitres}}</p>
-        <div>
-          <p *ngFor="let avis of video.avis">{{avis.note}}</p>
-          <p *ngFor="let avis of video.avis">{{avis.commentaires}}</p>
-        </div>
+        <p *ngIf="video.sousTitres===true"><mat-icon>subtitles</mat-icon></p>
       </div>
+    </div>
+    <h2>Avis</h2>
+    <div class="bg-white rounded-full text-black flex justify-between p-5 w-full mb-2">
+      <p *ngFor="let avis of video.avis" class="mb-0">{{avis.commentaires}}</p>
+      <p *ngFor="let avis of video.avis" class="mb-0">{{avis.note}}/10</p>
+    </div>
+    <div class="bg-white rounded-full text-black flex justify-between p-5 w-full">
+      <p *ngFor="let avis of video.avis" class="mb-0">{{avis.commentaires}}</p>
+      <p *ngFor="let avis of video.avis" class="mb-0">{{avis.note}}/10</p>
     </div>
   </div>
 </body>

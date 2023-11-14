@@ -12,9 +12,9 @@
 <body>
   <div>
     <div class="relative inline-block">
-      <img class="rounded-xl" [src]="video.img_url" alt="{{video.nom}}">
+      <img class="block max-w-full h-auto rounded-xl" [src]="video.img_url" alt="{{video.nom}}">
       <p
-        class="absolute top-40 left-72 translate-y-14 translate-x-16 p-1 bg-black text-white border border-solid border-white rounded">
+        class="absolute bottom-2.5 right-2.5 p-1 mb-0 bg-black text-white border border-solid border-white rounded">
         {{video.duree}}</p>
     </div>
     <div ngClass="{'score-eleve': video.score > 5000, 'score-bas': video.score < 5000}" class="text-right" >

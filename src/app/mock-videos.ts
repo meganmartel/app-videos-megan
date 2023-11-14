@@ -15,7 +15,7 @@ export const VIDEOS: Video[] = [
         duree: 1278,
         nombreVues: 274,
         score: 2385,
-        sousTitres: 'st',
+        sousTitres: true,
         avis: [
             {
                 note: 8,
@@ -38,7 +38,7 @@ export const VIDEOS: Video[] = [
         duree: 2436,
         nombreVues: 300,
         score: 5932,
-        sousTitres: 'st',
+        sousTitres: true,
         avis: [
             {
                 note: 9,
@@ -62,7 +62,7 @@ export const VIDEOS: Video[] = [
         duree: 2211,
         nombreVues: 350,
         score: 4270,
-        sousTitres: 'st',
+        sousTitres: true,
         avis: [
             {
                 note: 8.5,
@@ -85,7 +85,7 @@ export const VIDEOS: Video[] = [
         duree: 1489,
         nombreVues: 243,
         score: 6400,
-        sousTitres: 'st',
+        sousTitres: true,
         avis: [
             {
                 note: 8.8,
@@ -109,7 +109,7 @@ export const VIDEOS: Video[] = [
         duree: 1376,
         nombreVues: 326,
         score: 3610,
-        sousTitres: 'st',
+        sousTitres: true,
         avis: [
             {
                 note: 8.4,
@@ -132,7 +132,7 @@ export const VIDEOS: Video[] = [
         duree: 1128,
         nombreVues: 259,
         score: 5542,
-        sousTitres: 'st',
+        sousTitres: true,
         avis: [
             {
                 note: 9.3,
@@ -155,7 +155,7 @@ export const VIDEOS: Video[] = [
         duree: 2157,
         nombreVues: 192,
         score: 2470,
-        sousTitres: 'st',
+        sousTitres: true,
         avis: [
             {
                 note: 7.8,
@@ -179,7 +179,7 @@ export const VIDEOS: Video[] = [
         duree: 1368,
         nombreVues: 290,
         score: 6250,
-        sousTitres: 'st',
+        sousTitres: true,
         avis: [
             {
                 note: 8.7,
@@ -202,7 +202,7 @@ export const VIDEOS: Video[] = [
         duree: 1735,
         nombreVues: 318,
         score: 4500,
-        sousTitres: 'st',
+        sousTitres: true,
         avis: [
             {
                 note: 8.2,
@@ -226,7 +226,7 @@ export const VIDEOS: Video[] = [
         duree: 1906,
         nombreVues: 240,
         score: 5390,
-        sousTitres: 'st',
+        sousTitres: true,
         avis: [
             {
                 note: 9.7,
