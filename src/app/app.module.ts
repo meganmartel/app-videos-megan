@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 import {MatIconModule} from '@angular/material/icon';
 import {MatChipsModule} from '@angular/material/chips'; 
+import {MatBadgeModule} from '@angular/material/badge';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -31,7 +32,8 @@ import { MenuGaucheComponent } from './menu-gauche/menu-gauche.component';
     BrowserAnimationsModule,
     CommonModule,
     MatIconModule,
-    MatChipsModule
+    MatChipsModule,
+    MatBadgeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

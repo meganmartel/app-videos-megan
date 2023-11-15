@@ -37,15 +37,15 @@
         <p>{{video.datePublication}}</p>
         <p>{{video.nombreVues}}k vues</p>
         <p>{{video.score}}</p>
-        <p *ngIf="video.sousTitres===true"><mat-icon>subtitles</mat-icon></p>
+        <p *ngIf="video.sousTitres==='ss'"><mat-icon>subtitles</mat-icon></p>
       </div>
     </div>
     <h2>Avis</h2>
-    <div class="bg-white rounded-full text-black flex justify-between p-5 w-full mb-2">
+    <div class="bg-white rounded-full text-black flex justify-between p-3 w-full mb-2">
       <p *ngFor="let avis of video.avis" class="mb-0">{{avis.commentaires}}</p>
       <p *ngFor="let avis of video.avis" class="mb-0">{{avis.note}}/10</p>
     </div>
-    <div class="bg-white rounded-full text-black flex justify-between p-5 w-full">
+    <div class="bg-white rounded-full text-black flex justify-between p-3 w-full">
       <p *ngFor="let avis of video.avis" class="mb-0">{{avis.commentaires}}</p>
       <p *ngFor="let avis of video.avis" class="mb-0">{{avis.note}}/10</p>
     </div>

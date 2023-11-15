@@ -21,7 +21,7 @@ export class VideoCompletComponent {
     duree: 0,
     nombreVues: 0,
     score: 0,
-    sousTitres: true,
+    sousTitres: "",
     avis: []
   }
 }
