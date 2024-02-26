@@ -2,6 +2,7 @@ import { Utilisateur } from "./utilisateur";
 import { Avis } from "./avis";
 
 export interface Video {
+    id?: number;
     img_url: string;
     nom: string;
     description: string;

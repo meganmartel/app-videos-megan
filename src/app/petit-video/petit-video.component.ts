@@ -8,6 +8,7 @@ import { Video } from '../video';
 })
 export class PetitVideoComponent {
   @Input() video: Video = {
+    id: 0,
     img_url: "",
     nom: "",
     description: "",

@@ -1,1 +1,4 @@
-<p class="m-0">{{auteur.nom}}</p>
+<div class="flex items-center">
+    <p class="m-0">{{auteur.nom}}</p>
+    <span *ngIf="auteur.verifie===true" class="text-green-500 ml-2"><mat-icon>verified</mat-icon></span>
+</div>

@@ -1,19 +1,23 @@
-<html lang="en">
+<div class="flex items-center">
+  <mat-chip-listbox aria-label="Categories">
+    <mat-chip-option color="warn" (click)="selectCategory('Voyage')">Voyage</mat-chip-option>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <title>Liste des vidéos</title>
-</head>
+    <mat-chip-option color="warn" (click)="selectCategory('Action')">Action</mat-chip-option>
 
-<body>
-  <div class="grid grid-cols-5 gap-10 mt-10">
-    <div *ngFor="let video of videos">
+    <mat-chip-option color="warn" (click)="selectCategory('Drame')">Drame</mat-chip-option>
+
+    <mat-chip-option color="warn" (click)="selectCategory('Musique')">Musique</mat-chip-option>
+
+    <mat-chip-option color="warn" (click)="selectCategory('Humour')">Humour</mat-chip-option>
+
+    <mat-chip-option color="warn" (click)="selectCategory('Romantique')">Romantique</mat-chip-option>
+  </mat-chip-listbox>
+</div>
+
+<div class="grid grid-cols-5 gap-10 mt-10">
+  <div *ngFor="let video of videos | categorie:selectedCategory | scoreSuperior">
+    <a [routerLink]="['/video', video.id]">
       <app-petit-video [video]="video"></app-petit-video>
-    </div>
+    </a>
   </div>
-</body>
-
-</html>
+</div>

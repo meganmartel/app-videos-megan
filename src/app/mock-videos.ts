@@ -2,18 +2,19 @@ import { Video } from "./video";
 
 export const VIDEOS: Video[] = [
     {
+        id: 0,
         img_url: "https://picsum.photos/id/49/400/250",
         nom: 'Un voyage de rêve',
         description: 'Description de la vidéo 1',
         categories: ['Voyage'],
         auteur: {
-            nom: 'Julia Pearson',
-            description: 'Description de Julia Pearson',
+            nom: 'Megan Martel',
+            description: 'Description de Megan Martel',
             verifie: true,
         },
         datePublication: '31-10-2020',
         duree: 1278,
-        nombreVues: 274,
+        nombreVues: 35478,
         score: 2385,
         sousTitres: 'ss',
         avis: [
@@ -25,6 +26,7 @@ export const VIDEOS: Video[] = [
     },
 
     {
+        id: 0,
         img_url: "https://picsum.photos/id/191/400/250",
         nom: 'La route sinueuse',
         description: 'Description de la vidéo 2',
@@ -49,6 +51,7 @@ export const VIDEOS: Video[] = [
 
 
     {
+        id: 0,
         img_url: "https://picsum.photos/id/158/400/250",
         nom: 'Un spectacle réussi',
         description: 'Description de la vidéo 3',
@@ -72,6 +75,7 @@ export const VIDEOS: Video[] = [
     },
 
     {
+        id: 0,
         img_url: "https://picsum.photos/id/124/400/250",
         nom: 'Perdue sur une île',
         description: 'Description de la vidéo 4',
@@ -96,12 +100,13 @@ export const VIDEOS: Video[] = [
     
 
     {
+        id: 0,
         img_url: "https://picsum.photos/id/155/400/250",
         nom: 'Le chemin de fer',
         description: 'Description de la vidéo 5',
         categories: ['Action'],
         auteur: {
-            nom: 'Lili Clark',
+            nom: 'Lily Clark',
             description: 'Description de Lily Clark',
             verifie: true,
         },
@@ -119,6 +124,7 @@ export const VIDEOS: Video[] = [
     },
 
     {
+        id: 0,
         img_url: "https://picsum.photos/id/156/400/250",
         nom: 'Une empreinte inconnue',
         description: 'Description de la vidéo 6',
@@ -142,6 +148,7 @@ export const VIDEOS: Video[] = [
     },
 
     {
+        id: 0,
         img_url: "https://picsum.photos/id/274/400/250",
         nom: 'Bienvenue à New York',
         description: 'Description de la vidéo 7',
@@ -166,6 +173,7 @@ export const VIDEOS: Video[] = [
 
 
     {
+        id: 0,
         img_url: "https://picsum.photos/id/318/400/250",
         nom: 'Bonjour Paris',
         description: 'Description de la vidéo 8',
@@ -189,6 +197,7 @@ export const VIDEOS: Video[] = [
     },
 
     {
+        id: 0,
         img_url: "https://picsum.photos/id/336/400/250",
         nom: 'Les serrures de l`amour',
         description: 'Description de la vidéo 9',
@@ -213,6 +222,7 @@ export const VIDEOS: Video[] = [
     
 
     {
+        id: 0,
         img_url: "https://picsum.photos/id/348/400/250",
         nom: 'La folie des magasins',
         description: 'Description de la vidéo 10',

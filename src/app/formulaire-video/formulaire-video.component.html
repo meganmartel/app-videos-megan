@@ -1,0 +1,53 @@
+<form class="text-black w-1/2 mx-auto" #videoForm="ngForm">
+  <div class="flex flex-col">
+    <mat-form-field>
+      <mat-label>Nom de la vidéo</mat-label>
+      <input matInput placeholder="Nom de la vidéo" required minlength="3" maxlength="30" [(ngModel)]="video.nom"
+        name="nom" #nom="ngModel">
+    </mat-form-field>
+
+    <mat-error *ngIf="nom.invalid && (nom.dirty || nom.touched) && nom.hasError('required')">
+      Le nom est obligatoire.
+    </mat-error>
+    <mat-error *ngIf="nom.invalid && (nom.dirty || nom.touched) && nom.hasError('minlength')">
+      Le nom doit contenir au moins 3 caractères.
+    </mat-error>
+    <mat-error *ngIf="nom.invalid && (nom.dirty || nom.touched) && nom.hasError('maxlength')">
+      Le nom doit contenir au maximum 30 caractères.
+    </mat-error>
+
+    <mat-form-field>
+      <mat-label>Description</mat-label>
+      <textarea matInput placeholder="Description" [(ngModel)]="video.description" name="description"></textarea>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Date de publication</mat-label>
+      <input matInput [matDatepicker]="picker" [(ngModel)]="video.datePublication" name="date">
+      <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    <mat-label>Durée (secondes)</mat-label>
+    <mat-slider min="1" max="3600" step="1" color="accent" discrete="true">
+      <input matSliderThumb [(ngModel)]="selectedvalue" name="selectedValue" [(ngModel)]="video.duree" name="duree"
+        required>
+    </mat-slider>
+    <mat-form-field>
+      <mat-label>Sous-titres</mat-label>
+      <select matNativeControl required [(ngModel)]="video.sousTitres" name="sous-titres">
+        <option value="aucun">Aucun</option>
+        <option value="sous-titres">Sous-titres</option>
+        <option value="sous-titrage">Sous-titrage pour sourds et malentendants</option>
+      </select>
+    </mat-form-field>
+  </div>
+  <div>
+    <button *ngIf="video.id; else boutonAjout" mat-button mat-aria-label="Modifier"
+      [disabled]="!videoForm.form.valid" (click)="updateVideo(videoForm)">Modifier</button>
+    <ng-template #boutonAjout>
+      <button mat-button mat-aria-label="Ajouter"
+        [disabled]="!videoForm.form.valid" (click)="addVideo(videoForm)">Ajouter</button>
+    </ng-template>
+
+    <button mat-button mat-aria-label="Annuler" (click)="annuler()">Annuler</button>
+  </div>
+</form>

@@ -1,0 +1,11 @@
+:host {
+    display: block;
+    text-align: center;
+    min-width: 300px;
+    margin-top: 25px;
+}
+
+.selectedValue {
+    color: white;
+}
+

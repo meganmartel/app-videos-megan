@@ -1,41 +1,24 @@
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <title>Petit vidéo</title>
-</head>
-
-<body>
-  <div>
-    <div class="relative inline-block">
-      <img class="block max-w-full h-auto rounded-xl" [src]="video.img_url" alt="{{video.nom}}">
-      <p
-        class="absolute bottom-2.5 right-2.5 p-1 mb-0 bg-black text-white border border-solid border-white rounded">
-        {{video.duree}}</p>
+<div>
+  <div class="relative inline-block">
+    <img class="block max-w-full h-auto rounded-xl" [src]="video.img_url" alt="{{video.nom}}">
+    <p class="absolute bottom-2.5 right-2.5 p-1 mb-0 bg-black text-white border border-solid border-white rounded">
+      {{video.duree | dureeVideoFormat}}</p>
+  </div>
+  <div ngClass="{'score-eleve': video.score > 5000, 'score-bas': video.score < 5000}" class="text-right">
+    <span *ngIf="video.score > 5000" class="text-green-500 font-bold">Score élevé</span>
+    <span *ngIf="video.score < 5000" class="text-red-500 font-bold">Score bas</span>
+  </div>
+  <div class="flex">
+    <div>
+      <img class="h-14 w-14 rounded-full mt-2.5" src="/assets/woman.jpg" alt="utilisateur">
     </div>
-    <div ngClass="{'score-eleve': video.score > 5000, 'score-bas': video.score < 5000}" class="text-right" >
-      <span *ngIf="video.score > 5000" class="text-green-500 font-bold">Score élevé</span>
-      <span *ngIf="video.score < 5000" class="text-red-500 font-bold">Score bas</span>
-    </div>
-    <div class="flex">
-      <div>
-        <img class="h-14 w-14 rounded-full mt-2.5" src="/assets/woman.jpg" alt="utilisateur">
+    <div class="ml-5">
+      <h1 class="mb-2.5 mt-5 font-normal">{{video.nom}}</h1>
+      <div class="flex mb-2 mt-1 items-center">
+        <app-utilisateur [auteur]="video.auteur"></app-utilisateur>
       </div>
-      <div class="ml-5">
-        <h1 class="mb-2.5 mt-5 font-normal">{{video.nom}}</h1>
-        <div class="flex mb-2 mt-1 items-center">
-          <app-utilisateur class="mr-2.5" [auteur]="video.auteur"></app-utilisateur>
-          <span *ngIf="video.auteur.verifie===true" class="text-green-500"><mat-icon>verified</mat-icon></span>
-        </div>
-        <p>{{video.datePublication}}</p>
-        <p>{{video.nombreVues}}k vues</p>
-      </div>
+      <p>{{video.datePublication}}</p>
+      <p>{{video.nombreVues | vuesFormat }}</p>
     </div>
   </div>
-</body>
-
-</html>
+</div>

@@ -1,21 +1,10 @@
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <title>Vidéo complet</title>
-</head>
-
-<body class="pb-20">
+<div class="flex justify-center items-center mt-10 mb-20">
   <div class="gros-video">
     <div class="relative inline-block">
       <img class="block max-w-full h-auto rounded-xl" [src]="video.img_url" alt="{{video.nom}}">
       <p
         class="absolute bottom-2.5 right-2.5 p-1 mb-0 bg-black text-white border border-solid border-white rounded">
-        {{video.duree}}</p>
+        {{video.duree | dureeVideoFormat}}</p>
     </div>
     <div class="flex">
       <div>
@@ -27,29 +16,25 @@
         <h3 class="mb-2.5">{{video.categories}}</h3>
         <div>
           <div class="flex mb-2 mt-1 items-center">
-            <app-utilisateur class="mr-2.5" [auteur]="video.auteur"></app-utilisateur>
-            <span *ngIf="video.auteur.verifie===true" class="text-green-500"><mat-icon>verified</mat-icon></span>
+            <app-utilisateur [auteur]="video.auteur"></app-utilisateur>
           </div>
           <div>
             <p>{{video.auteur.description}}</p>
           </div>
         </div>
         <p>{{video.datePublication}}</p>
-        <p>{{video.nombreVues}}k vues</p>
+        <p [matTooltip]="getTooltipText(video.nombreVues)">
+          {{video.nombreVues | vuesFormat }}
+        </p>
         <p>{{video.score}}</p>
         <p *ngIf="video.sousTitres==='ss'"><mat-icon>subtitles</mat-icon></p>
       </div>
     </div>
     <h2>Avis</h2>
-    <div class="bg-white rounded-full text-black flex justify-between p-3 w-full mb-2">
-      <p *ngFor="let avis of video.avis" class="mb-0">{{avis.commentaires}}</p>
-      <p *ngFor="let avis of video.avis" class="mb-0">{{avis.note}}/10</p>
+    <div *ngFor="let avis of avis" class="bg-white rounded-full text-black flex justify-between p-3 w-full mb-2">
+      <p class="mb-0">{{avis.commentaires}}</p>
+      <p class="mb-0">{{avis.note}}/10</p>
     </div>
-    <div class="bg-white rounded-full text-black flex justify-between p-3 w-full">
-      <p *ngFor="let avis of video.avis" class="mb-0">{{avis.commentaires}}</p>
-      <p *ngFor="let avis of video.avis" class="mb-0">{{avis.note}}/10</p>
-    </div>
+   
   </div>
-</body>
-
-</html>
+</div>

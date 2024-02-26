@@ -1,41 +1,14 @@
-<html lang="en">
+<body class="font-sans bg-black text-white h-max">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>App-vidéos</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
+  <app-entete></app-entete>
+  <router-outlet></router-outlet>
+  <app-pied-de-page></app-pied-de-page>
 
-<body class="w-full font-sans bg-black text-white">
 
-  <header class="flex justify-between items-center w-100 p-10 m-auto">
-    <h1><img src="/assets/Metube.png" alt="Logo"></h1>
-    <p class="bg-white text-black p-2 rounded-xl w-80 mb-0">Rechercher</p>
-    <app-utilisateur class="bg-white text-black p-2 rounded-xl mb-0" [auteur]="videos[0].auteur"></app-utilisateur>
-  </header>
-  
-
-  <div class="flex w-100 mx-auto bg-black justify-center p-10">
-    <app-menu-gauche></app-menu-gauche>
-    <div class="flex flex-col pl-20">
-      <app-categories></app-categories>
-      <div class="mb-20">
-        <app-liste-videos></app-liste-videos>
-      </div>
-      <div>
-        <app-video-complet [video]="videos[0]" class="flex justify-center" ></app-video-complet>
-      </div>
-    </div>
-  </div>
 
 </body>
 
-</html>
 
 
 
 
-
-<router-outlet></router-outlet>
